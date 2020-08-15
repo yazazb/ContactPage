@@ -11,38 +11,71 @@
     <!-- <link rel="stylesheet" href="style.css" />
     <style> -->
     <style>
+      #conatiner {
+        margin: auto;
+        width: 50%;
+      }
       body,
       input,
       textarea {
         background-color: #ffbf00;
       }
-      #conatiner {
-        margin: auto;
+      input,
+      textarea {
+        border: none;
+        border-bottom: 2px solid black;
+        margin: 20px;
+      }
+      ::placeholder {
+        color: rgb(70, 70, 70);
       }
     </style>
   </head>
   <body>
     <div class="text-center" id="container">
-      <form action="/action_page.php">
-        <h1>Contact Us</h1>
-          <br />
-          <h2>Name:</h2>
-          <input type="text" name="" id="" required="required" />
-          <h3>Email:</h3>
-          <input type="email" name="" id="" required="required" />
-          <h3>Phone Number:</h3>
-          <input type="number" name="" id="" required="required" maxlength="10" />
-          <h3>Message:</h3>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="5"
-            required="required"
-          ></textarea>
-          <br />
-          <br />
-          <button type="submit" class="btn btn-dark">Submit</button>
+      <h1>Contact Us</h1>
+      <br />
+      <form action="" method="post">
+        <input
+          type="text"
+          name=""
+          id=""
+          required="required"
+          autocomplete="on"
+          placeholder="Your Name"
+        />
+        <br />
+        <input
+          type="email"
+          name=""
+          id=""
+          required="required"
+          autocomplete="on"
+          placeholder="Your Email Address"
+        />
+        <br />
+        <input
+          type="number"
+          name=""
+          id=""
+          required="required"
+          minlength="10"
+          autocomplete="on"
+          placeholder="Your Phone Number"
+        />
+        <br />
+        <textarea
+          name=""
+          id=""
+          cols="25"
+          rows="1"
+          required="required"
+          placeholder="Your Message"
+        ></textarea>
+        <br />
+        <br />
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
     </div>
   </body>
 </html>
